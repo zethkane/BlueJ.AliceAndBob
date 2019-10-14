@@ -35,8 +35,8 @@ public class AliceAndBobEngineTest
         assertEquals("Hello Alice", aliceAndBobEngineTest.evaluateAliceOrBob("Alice"));
         assertNotEquals("Hello Alice", aliceAndBobEngineTest.evaluateAliceOrBob("Jeff. Jeff the Elephant."));
         
-        assertEquals("I don't know you, you are scary.", aliceAndBobEngineTest.evaluateAliceOrBob("Alicia"));
-        assertNotEquals("I don't know you, you are scary.", aliceAndBobEngineTest.evaluateAliceOrBob("Alice"));
+        assertEquals("I DON'T KNOW YOU, YOU ARE SCARY", aliceAndBobEngineTest.evaluateAliceOrBob("Alicia"));
+        assertNotEquals("I DON'T KNOW YOU, YOU ARE SCARY", aliceAndBobEngineTest.evaluateAliceOrBob("Alice"));
         
     }
     
@@ -47,8 +47,17 @@ public class AliceAndBobEngineTest
         assertEquals("Hello Bob", aliceAndBobEngineTest.evaluateAliceOrBob("Bob"));
         assertNotEquals("Hello Alice", aliceAndBobEngineTest.evaluateAliceOrBob("Pamela. Pamela the tropical citrus tree."));
         
-        assertEquals("I don't know you, you are scary.", aliceAndBobEngineTest.evaluateAliceOrBob("Bobert"));
-        assertNotEquals("I don't know you, you are scary.", aliceAndBobEngineTest.evaluateAliceOrBob("Bob"));
+        assertEquals("I DON'T KNOW YOU, YOU ARE SCARY", aliceAndBobEngineTest.evaluateAliceOrBob("Bobert"));
+        assertNotEquals("I DON'T KNOW YOU, YOU ARE SCARY", aliceAndBobEngineTest.evaluateAliceOrBob("Bob"));
+    }
+    
+    @Test
+    public void evaluateAliceOrBobTestScary(){
+        AliceAndBobEngine aliceAndBobEngineTest = new AliceAndBobEngine();
+        
+        assertNotEquals("I don't know you, you are scary?", aliceAndBobEngineTest.evaluateAliceOrBob("Cynthia"));
+        assertNotEquals("I don't know you, you are scary!", aliceAndBobEngineTest.evaluateAliceOrBob("Simba"));
+        assertNotEquals("New method, who dis?", aliceAndBobEngineTest.evaluateAliceOrBob("Luna"));
     }
         
 }
