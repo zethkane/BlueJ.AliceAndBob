@@ -15,7 +15,7 @@
 ### **Purpose:**
 * To establish familiarity with
     * Conditionals
-    * Method invokation
+    * Method invocation
 
 ### Unit Test
 Provided in AliceAndBobTest
