@@ -9,25 +9,19 @@
 ## Alice and Bob Greeting
 
 ### **Objective:**
-* Write a program which prompts the user to input his/her name.
-* The program should greet users whose names are 'Alice' and 'Bob'.
+* Use conditionals to produce expected return.
+* The method evaluateAliceOrBob should return a String which is different depending upon what is entered as a parameter.
 
 ### **Purpose:**
 * To establish familiarity with
-    * Control Flow
     * Conditionals
-    * User input
-    * Object instantation/declaration
     * Method invokation
 
-### **Resources:**
-* [Procedural Programming](https://zipcoder.github.io/reveal-slides-light/procedural-programming.html#/)
-
 ### Unit Test
-* No Unit Test
+Provided in AliceAndBobTest
 
 
 ### Instructions
-1. Understand how to get input from user
-2. Create conditional to check against Alice and Bob
-3. Print greeting to screen if Alice or Bob are true
+1. Read unit tests in AliceAndBobTest
+2. Understand expected return for evaluateAliceOrBob()
+3. Satisfy unit tests
